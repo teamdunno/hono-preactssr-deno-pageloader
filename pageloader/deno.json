@@ -1,0 +1,9 @@
+{
+    "name": "pageloader",
+    "exports":"./mod.ts",
+    "imports": {
+        "@hono/hono": "jsr:@hono/hono@^4.6.11",
+        "@sinclair/typebox": "npm:@sinclair/typebox@^0.34.7",
+        "fast-glob": "npm:fast-glob@^3.3.2"
+    }
+}
