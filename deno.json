@@ -1,0 +1,18 @@
+{
+    "lock": true,
+    "license": "MIT",
+    "version": "0.0.1",
+    "workspace": ["./pageloader"],
+    "tasks": {
+        "init": "echo '> Installing deps'; cd pageloader; deno install; cd ..; echo '> Installing deps for the root project'; deno install; echo '> Deps installed!'",
+        "start": "deno serve --allow-net --allow-sys --allow-read main.ts",
+        "dev": "deno serve --allow-net --allow-sys --allow-read --watch main.ts"
+    },
+    "compilerOptions": {
+      "jsx": "precompile",
+      "jsxImportSource": "hono/jsx"
+    },
+    "imports": {
+        "hono": "jsr:@hono/hono"
+    }
+}
