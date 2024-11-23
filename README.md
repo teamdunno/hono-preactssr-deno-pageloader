@@ -16,9 +16,15 @@ export default async (app: HonoApp) => {
 
 The `HonoApp` type is from our predefined `Hono` class on [./types.d.ts](./types.d.ts), which is linked to our [main file](./main.ts)
 
-You can even make a static folder by just making `root` folder inside `page`. And you can visit them on your website under `/`
+You can even make a static folder by just making `root` folder inside `page`, then change the code on the main file
+```js
+await loader.load({static:["root"]},app)
+```
+Only the `root` folder name are special, because you cant really name your folder using slash, so i made the `root` folder special
 
-Or custom static page like `assets` to `page`. And you can visit them on your website under `assets`
+And you can visit them on your website under `/`
+
+Or another name like `assets` and add it to `page`. You can visit them on your website under `assets`. For this case, No need to change the [main file](./main.ts) because I already included it
 
 ## Installation
 To install every dependecies that our projects needed, use
