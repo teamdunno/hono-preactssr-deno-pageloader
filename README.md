@@ -1,4 +1,4 @@
-# Hono + (P)react SSR + Deno + DunnoPageloader
+# Hono + Hono JSX + Deno + DunnoPageloader
 This is a Hono & Deno server with the minimal configuration using our own `pageloader` monorepo. For now it only detects react (`.tsx`) files
 
 It dosent need any imports to your main file, just add the files directly to the `page` folder and boom! Your built-in Hono just showed up
